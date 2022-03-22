@@ -1,0 +1,50 @@
+.main{
+	display: flex;
+	margin-top: 20px;
+	flex-direction: column;
+	row-gap: 20px;
+}
+
+.content{
+	display: flex;
+	column-gap: 5%;
+	align-items: flex-start;
+	padding: 0 5%;
+	margin-bottom: min(5%);
+}
+
+/* контейнер карточки игрока */
+.content__player-info{
+	flex: 30%;
+}
+
+.content__friends-table{
+	border: 2px solid #1f1f1f;
+	flex: 70%;
+	background-color: #2b2b2b;
+}
+
+.sortable{
+	display: flex;
+	flex-direction: column;
+}
+
+.thead > tr{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	color: #adadad;
+	background-color: #333;
+	border-bottom: 2px solid #1f1f1f;
+}
+
+.tbody > tr{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #adadad;
+	border-bottom: 1px solid #1f1f1f;
+}
+
+
+

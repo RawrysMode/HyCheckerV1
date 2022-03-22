@@ -1,0 +1,27 @@
+.search-from{
+	margin: 0px auto;
+	display: flex;
+	column-gap: 20px;
+	flex-direction: row;
+}
+
+.main__search{
+	background-color: hsla(0,0%,100%,.05);
+	padding: 15px;
+	width: 400px;
+	border: 2px solid #666;
+}
+
+.main__search-sumbit{
+	cursor: pointer;
+	background-color: #dd9f4e;
+	padding: 0px 15px 0px 15px; 
+	color: #fff;
+	border: none;
+	-webkit-appearance: none;
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+

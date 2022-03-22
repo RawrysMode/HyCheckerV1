@@ -1,0 +1,39 @@
+.content__content-card{
+	display: flex;
+	flex-direction: column;
+	background-color: #2b2b2b;
+	border: 2px solid #1f1f1f;
+	height: min-content;
+}
+
+.content__content-card > h4{
+	background-color: #333;
+	text-align: center;
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 25px;
+	color: #adadad;
+	border-bottom: 2px solid #1f1f1f;
+}
+
+.nickname{
+	font-family: 'Minecraftia', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	color: rgb(85, 255, 255);
+	margin-top: 5px;
+}
+
+.bold-style{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	color: #adadad;
+}
+
+.content__player-stats{
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	padding-top: 0;
+}

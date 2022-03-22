@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="css/pages/index.css">
+		<link rel="stylesheet" href="css/pages/friends.css">
+		<link rel="stylesheet" href="css/components/player-card.css">
+		<link rel="stylesheet" href="css/components/search.css">
+		<link rel="stylesheet" href="css/components/tables-style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -14,10 +17,12 @@
     <title>React App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div class="wrapper">
+		<noscript>You need to enable JavaScript to run this app.</noscript>
+		<div class="wrapper">
+
 			<header class="header">
 				<a class="header__logo" href="index.html"><img src="img/logo.svg" alt="HyChecker" height="20"></a>
+
 				<nav class="navigation">
 					<ul class="navigation__topmenu">
 						<li><a class="navigation__link" href="stats.html">Player</a>
@@ -34,11 +39,45 @@
 			</header>
 
 			<main class="main">
+				<div class="search-from">
+					<input type="text" name="q" class="main__search" placeholder="Enter a Minecraft Username or UUID...">
+					<button type="submit" class="main__search-sumbit">Search</button>
+				</div>
+				
 				<section class="content">
-					<div class="content__about">
-						<h1>About HyChecker</h1>
-						<p>HyChecker is a website that provides in-game statistics of various game modes of the Hypixel minecraft server</p>
-						<p>To get started, select the desired section in the navigation bar. Let's Start!</p>
+					<div class="content__player-info content__content-card">
+						<h4>PLAYER INFORMATION</h4>
+							<span class="nickname">NICKNAME</span>
+						<div class="content__player-stats">
+							<span class="bold-style">Multiplier: </span>
+							<span class="bold-style">Level: </span>
+							<span class="bold-style">Karma: </span>
+							<span class="bold-style">Achievement Points: </span>
+							<span class="bold-style">Quests Completed: </span>
+							<span class="bold-style">First login: </span>
+							<span class="bold-style">Last login: </span>
+						</div>
+					</div>
+					
+					<div class="content__friends-table">
+						<table class="sortable">
+							<thead class="thead">
+								<tr>
+									<th scope="col">NICKNAME</th>
+									<th scope="col">DATE</th>
+								</tr>
+							</thead>
+							<tbody class="tbody">
+								<tr>
+									<td>" "</td>
+									<td>" "</td>
+								</tr>
+								<tr>
+									<td>" "</td>
+									<td>" "</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</section>
 			</main>
@@ -55,5 +94,5 @@
 				</div>
 			</footer>
 		</div>
-  </body>
+	</body>
 </html>

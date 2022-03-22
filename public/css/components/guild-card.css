@@ -1,0 +1,35 @@
+.content__content-card{
+	display: flex;
+	flex-direction: column;
+	background-color: #2b2b2b;
+	border: 2px solid #1f1f1f;
+	height: min-content;
+}
+
+.content__content-card > h4{
+	background-color: #333;
+	text-align: center;
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 25px;
+	color: #adadad;
+	border-bottom: 2px solid #1f1f1f;
+	border-top: 2px solid #1f1f1f;
+}
+
+#h4text{
+	border-top: none;
+}
+
+.bold-style{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	color: #adadad;
+}
+
+.content__guild-info, .content__guild-achievements{
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}

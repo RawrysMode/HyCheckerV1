@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="css/pages/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -16,8 +15,10 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div class="wrapper">
+
 			<header class="header">
 				<a class="header__logo" href="index.html"><img src="img/logo.svg" alt="HyChecker" height="20"></a>
+
 				<nav class="navigation">
 					<ul class="navigation__topmenu">
 						<li><a class="navigation__link" href="stats.html">Player</a>
@@ -35,10 +36,26 @@
 
 			<main class="main">
 				<section class="content">
-					<div class="content__about">
-						<h1>About HyChecker</h1>
-						<p>HyChecker is a website that provides in-game statistics of various game modes of the Hypixel minecraft server</p>
-						<p>To get started, select the desired section in the navigation bar. Let's Start!</p>
+					<div class="content__game-container">
+						<details class="content__spoiler">
+							<summary>" "</summary>
+							<table>
+								<thead>
+									<tr>
+										<th scope="col">Nickname</th>
+										<th scope="col">Multiplier</th>
+										<th scope="col">Expires in</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>" "</td>
+										<td>" "</td>
+										<td>" "</td>
+									</tr>
+								</tbody>
+							</table>
+						</details>
 					</div>
 				</section>
 			</main>

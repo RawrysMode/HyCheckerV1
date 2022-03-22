@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="css/pages/index.css">
+		<link rel="stylesheet" href="css/components/search-guild.css">
+		<link rel="stylesheet" href="css/pages/guild.css">
+		<link rel="stylesheet" href="css/components/guild-card.css">
+		<link rel="stylesheet" href="css/components/tables-style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -14,10 +17,10 @@
     <title>React App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div class="wrapper">
+		<div class="wrapper">
 			<header class="header">
 				<a class="header__logo" href="index.html"><img src="img/logo.svg" alt="HyChecker" height="20"></a>
+	
 				<nav class="navigation">
 					<ul class="navigation__topmenu">
 						<li><a class="navigation__link" href="stats.html">Player</a>
@@ -32,17 +35,70 @@
 					</ul>
 				</nav>
 			</header>
-
+	
 			<main class="main">
+				<div class="search-from">
+					<input type="text" name="q" class="main__search" placeholder="Enter a Minecraft Username or UUID...">
+					<button type="submit" class="main__search-sumbit">Search</button>
+				</div>
+				<div class="search-from">
+					<input type="text" name="q" class="main__search" placeholder="Enter a Guild Name...">
+					<button type="submit" class="main__search-sumbit">Search</button>
+				</div>
+				
 				<section class="content">
-					<div class="content__about">
-						<h1>About HyChecker</h1>
-						<p>HyChecker is a website that provides in-game statistics of various game modes of the Hypixel minecraft server</p>
-						<p>To get started, select the desired section in the navigation bar. Let's Start!</p>
+	
+					<div class="content__guild-stats content__content-card">
+						<h4 id="h4text">GUILD INFO</h4>
+						<div class="content__guild-info">
+							<span class="bold-style">Name: </span>
+							<span class="bold-style">Tag: </span>
+							<span class="bold-style">Created: </span>
+							<span class="bold-style">Members: </span>
+							<span class="bold-style">Level: </span>
+							<span class="bold-style">Description: </span>
+							<span class="bold-style">Public: </span>
+							<span class="bold-style">Joinable: </span>
+						</div>
+						<h4>ACHIEVEMENTS</h4>
+						<div class="content__guild-achievements">
+							<span class="bold-style">Experience Kings: </span>
+							<span class="bold-style">Online now: </span>
+							<span class="bold-style">Winners: </span>
+						</div>
 					</div>
+					
+					<div class="content__guild-table">
+						<table class="sortable">
+							<thead class="thead">
+								<tr>
+									<th scope="col">Nickname</th>
+									<th scope="col">Rank</th>
+									<th scope="col">Joined</th>
+									<th scope="col">Last Login</th>
+								</tr>
+							</thead>
+							<tbody class="tbody">
+								<tr>
+									<td>" "</td>
+									<td>" "</td>
+									<td>" "</td>
+									<td>" "</td>
+								</tr>
+								<tr>
+									<td>" "</td>
+									<td>" "</td>
+									<td>" "</td>
+									<td>" "</td>
+								</tr>
+							</tbody>
+							
+						</table>
+					</div>
+				
 				</section>
 			</main>
-
+	
 			<footer class="footer">
 				<span class="footer__copyrights">Coded by RawrysMode - 2022 - Template: <a href="http://plancke.io" target="_blank">plancke.io</a></span>
 				<div class="footer__links">
@@ -55,5 +111,5 @@
 				</div>
 			</footer>
 		</div>
-  </body>
+	</body>
 </html>

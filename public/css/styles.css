@@ -52,7 +52,7 @@ details[open] summary::before {
 .wrapper{
 	min-height: 100vh;
 	display: grid;
-	grid-template: minmax(100px, auto) 1fr minmax(50px, auto) / 1fr;
+	grid-template-rows: 100px 1fr 50px;
 	background-color: #333;
 	grid-template-areas: 
 		"header"
@@ -60,14 +60,18 @@ details[open] summary::before {
 		"footer";
 }
 
-.header, .footer{
+.header{
+	background-color: #2b2b2b;
+}
+
+.footer{
 	background-color: #2b2b2b;
 }
 
 .header{
 	display: grid;
 	grid-area: header;
-	grid-template: 1fr / 1fr minmax(auto, 200px) minmax(auto, 1100px) 1fr;
+	grid-template-columns: 1fr minmax(auto, 200px) minmax(auto, 1100px) 1fr;
 	border-bottom: 2px solid #1f1f1f;
 	justify-items: center;
 	align-items: center;
@@ -123,16 +127,15 @@ details[open] summary::before {
 }
 
 .footer{
-	display: grid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	grid-area: footer;
-	grid-template: 1fr / 1fr 1fr 1fr;
 	border-top: 2px solid #1f1f1f;
 	justify-items: center;
 }
 
-.footer__links, .footer__copyrights{
-	grid-column: 2 / 3;
-}
 
 .footer__copyrights{
 	font-family: 'Roboto', sans-serif;
